@@ -45,6 +45,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -100,6 +101,83 @@ img {
   min-height: 100dvh;
 }
 
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-inline: 2.5rem;
+}
+
 .page__main {
   flex: 1;
+}
+
+/*=============== HEADER ===============*/
+.page__header {
+  width: 100%;
+  background: url("../assets/img/noise_transparent@2x.png");
+  background-color: #211f20;
+}
+
+.header__container {
+  margin-top: 1.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo__title {
+  font-size: var(--text-logo);
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+
+.logo__subtitle {
+  text-align: end;
+  margin-top: 0.625rem;
+  margin-right: 0.063rem;
+  font-family: var(--font-secondary);
+  font-size: var(--text-logo-s);
+  letter-spacing: 0.1em;
+  color: var(--color-light-xl);
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  gap: 2.188rem;
+  padding: 0;
+}
+
+.menu__link {
+  display: block;
+  position: relative;
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  color: var(--color-dark-s);
+  padding-bottom: 3px;
+  transition: color 150ms ease;
+}
+
+.menu__link:hover {
+  color: var(--color-light-s);
+}
+
+.menu__link[aria-current="page"] {
+  color: var(--color-light-s);
+  cursor: default;
+  pointer-events: none;
+}
+
+.menu__link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--color-primary);
 }
