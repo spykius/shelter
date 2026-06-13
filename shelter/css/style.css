@@ -20,7 +20,7 @@
   --font-normal: normal;
   --font-italic: italic;
 
-  --text-hero: 2.75rem;
+  --text-h1: 2.75rem;
   --text-h2: 2.1875rem;
   --text-logo: 2rem;
   --text-h2-s: 1.5625rem;
@@ -74,6 +74,7 @@ p {
 ul,
 ol {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -111,6 +112,22 @@ img {
   flex: 1;
 }
 
+.button-link {
+  display: block;
+  font-size: var(--text-button);
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-3xl);
+  border-radius: 100px;
+  padding: 0.938rem 2.813rem;
+  background-color: var(--color-primary);
+  transition: background-color 200ms ease;
+}
+
+.button-link:hover {
+  background-color: var(--color-primary-light);
+}
+
 /*=============== HEADER ===============*/
 .page__header {
   width: 100%;
@@ -119,9 +136,9 @@ img {
 }
 
 .header__container {
-  margin-top: 1.875rem;
   display: flex;
   align-items: center;
+  padding-block-start: 1.875rem;
 }
 
 .logo__title {
@@ -132,13 +149,13 @@ img {
 }
 
 .logo__subtitle {
-  text-align: end;
   margin-top: 0.625rem;
   margin-right: 0.063rem;
   font-family: var(--font-secondary);
   font-size: var(--text-logo-s);
   letter-spacing: 0.1em;
   color: var(--color-light-xl);
+  text-align: end;
 }
 
 .header__menu {
@@ -149,7 +166,6 @@ img {
   display: flex;
   align-items: center;
   gap: 2.188rem;
-  padding: 0;
 }
 
 .menu__link {
@@ -180,4 +196,50 @@ img {
   height: 3px;
   width: 100%;
   background-color: var(--color-primary);
+}
+
+/*=============== MAIN ===============*/
+.hero {
+  width: 100%;
+  background: url("../assets/img/noise_transparent@2x.png");
+  background-color: #211f20;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  gap: 2.625rem;
+  padding-block-start: 5.625rem;
+}
+
+.hero__content {
+  flex: 0 1 28.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.625rem;
+  margin-top: -5rem;
+}
+
+.hero__title {
+  font-size: var(--text-h1);
+  font-weight: var(--font-regular);
+  line-height: 1.3;
+  color: var(--color-light-xl);
+  max-width: 19.375rem;
+}
+
+.hero__subtitle {
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+  color: var(--color-dark-s);
+}
+
+.hero__image-wrapper {
+  flex: 1 1 43.625rem;
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
 }
