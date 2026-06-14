@@ -56,7 +56,10 @@ body {
 
 body {
   color: var(--color-dark-xl);
-  background-color: var(--color-light-xl);
+  background:
+    url("../assets/img/noise_transparent@2x.png"),
+    radial-gradient(75% 40% at 0% 0%, #5b483a 0%, #262425 100%);
+  background-color: #211f20;
   font-family: var(--font-primary);
   font-style: var(--font-normal);
   font-weight: var(--font-regular);
@@ -139,8 +142,6 @@ img {
 /*=============== HEADER ===============*/
 .page__header {
   width: 100%;
-  background: url("../assets/img/noise_transparent@2x.png");
-  background-color: #211f20;
 }
 
 .header__container {
@@ -210,8 +211,6 @@ img {
 /*========== hero ==========*/
 .hero {
   width: 100%;
-  background: url("../assets/img/noise_transparent@2x.png");
-  background-color: #211f20;
 }
 
 .hero__container {
@@ -380,6 +379,7 @@ img {
   background: var(--color-light-s);
   border-radius: 0.563rem;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card > * {
@@ -409,7 +409,7 @@ img {
     border-color 0.2s ease;
 }
 
-.card__btn:hover {
+.card:hover .card__btn {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
@@ -511,6 +511,11 @@ img {
   border-radius: 0.563rem;
   padding: 0.625rem 0.938rem;
   background: var(--color-primary);
+  transition: background-color 0.2s ease;
+}
+
+.donation__link:hover {
+  background-color: var(--color-primary-light);
 }
 
 .donation__card-icon {
@@ -538,7 +543,9 @@ img {
 /*=============== FOOTER ===============*/
 .page__footer {
   width: 100%;
-  background: url("../assets/img/noise_transparent@2x.png");
+  background:
+    url("../assets/img/noise_transparent@2x.png"),
+    radial-gradient(100% 200% at 0% 50%, #513d2f 0%, #1a1a1c 80%);
   background-color: #211f20;
 }
 
@@ -579,6 +586,7 @@ img {
 
 .footer__icon {
   color: var(--color-primary);
+  transition: color 0.2s ease;
 }
 
 .icon-mail {
@@ -601,6 +609,12 @@ img {
   line-height: 1.15;
   letter-spacing: 0.06em;
   color: var(--color-primary);
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover .footer__icon,
+.footer__link:hover .footer__link-txt {
+  color: var(--color-light-s);
 }
 
 .footer__image-wrapper {
