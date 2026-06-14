@@ -463,3 +463,74 @@ img {
   text-align: center;
   color: var(--color-dark-l);
 }
+
+/*========== donation ==========*/
+.donation {
+  width: 100%;
+  background: var(--color-light-l);
+}
+
+.donation__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 5rem 6.25rem;
+  gap: 1.875rem;
+}
+
+.donation__image-wrapper {
+  flex: 0 1 31.563rem;
+}
+
+.donation__image {
+  display: block;
+  width: 100%;
+}
+
+.donation__content {
+  flex: 0 1 23.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.donation__title {
+  max-width: 18.75rem;
+}
+
+.donation__subtitle {
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+}
+
+.donation__link {
+  display: flex;
+  align-items: center;
+  gap: 0.938rem;
+  border-radius: 0.563rem;
+  padding: 0.625rem 0.938rem;
+  background: var(--color-primary);
+}
+
+.donation__card-icon {
+  width: 1.875rem;
+  height: 1.438rem;
+  color: var(--color-dark-3xl);
+}
+
+.donation__card-number {
+  font-weight: var(--font-regular);
+  font-size: var(--text-h3);
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}
+
+.donation__text {
+  font-family: var(--font-secondary);
+  font-style: var(--font-italic);
+  font-size: var(--text-body-s);
+  line-height: 1.5;
+  color: var(--color-dark-m);
+}
