@@ -58,8 +58,7 @@ body {
   color: var(--color-dark-xl);
   background:
     url("../assets/img/noise_transparent@2x.png"),
-    radial-gradient(75% 40% at 0% 0%, #5b483a 0%, #262425 100%);
-  background-color: #211f20;
+    radial-gradient(75% 40% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   font-family: var(--font-primary);
   font-style: var(--font-normal);
   font-weight: var(--font-regular);
@@ -552,8 +551,7 @@ img {
   width: 100%;
   background:
     url("../assets/img/noise_transparent@2x.png"),
-    radial-gradient(100% 200% at 0% 50%, #513d2f 0%, #1a1a1c 80%);
-  background-color: #211f20;
+    radial-gradient(73.6% 150% at 5.78% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
 }
 
 .footer__conatiner {
