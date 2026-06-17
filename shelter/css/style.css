@@ -351,6 +351,7 @@ img {
   border-color: var(--color-dark-s);
   pointer-events: none;
   cursor: default;
+  color: var(--color-dark-s);
 }
 
 .slider__btn:disabled .slider__btn-icon {
