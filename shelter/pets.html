@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+
+    <title>Our pets</title>
+  </head>
+  <body data-page="pets">
+    <div class="page">
+      <header class="page__header">
+        <div class="header__container container">
+          <a class="logo" href="index.html">
+            <div class="logo__title">Cozy House</div>
+            <p class="logo__subtitle">Shelter for pets in Boston</p>
+          </a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="index.html" class="menu__link"> About the shelter </a>
+              </li>
+              <li class="menu__item">
+                <a href="pets.html" class="menu__link" aria-current="page">
+                  Our pets
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="index.html#help" class="menu__link">
+                  Help the shelter
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="pets.html#contacts" class="menu__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page__main">
+        <section class="pets" id="pets">
+          <div class="pets__container container">
+            <h1 class="pets__title section-title">
+              Our friends who are&nbsp;looking for a house
+            </h1>
+            <div class="pets__grid">
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-katrine.png"
+                  width="270"
+                  height="270"
+                  alt="Katrine, Cat - British Shorthair"
+                />
+                <h2 class="card__title">Katrine</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-jennifer.png"
+                  width="270"
+                  height="270"
+                  alt="Jennifer, Dog - Labrador"
+                />
+                <h2 class="card__title">Jennifer</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-woody.png"
+                  width="270"
+                  height="270"
+                  alt="Woody, Dog - Golden Retriever"
+                />
+                <h2 class="card__title">Woody</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-sophia.png"
+                  width="270"
+                  height="270"
+                  alt="Sophia, Dog - Shih tzu"
+                />
+                <h2 class="card__title">Sophia</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-timmy.png"
+                  width="270"
+                  height="270"
+                  alt="Timmy, Cat - British Shorthair"
+                />
+                <h2 class="card__title">Timmy</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-charly.png"
+                  width="270"
+                  height="270"
+                  alt="Charly, Dog - Jack Russell Terrier"
+                />
+                <h2 class="card__title">Charly</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-scarlet.png"
+                  width="270"
+                  height="270"
+                  alt="Scarlett, Dog - Jack Russell Terrier"
+                />
+                <h2 class="card__title">Scarlett</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+              <article class="pets__card card">
+                <img
+                  class="card__image"
+                  src="assets/img/pets-freddie.png"
+                  width="270"
+                  height="270"
+                  alt="Freddie, Cat - British Shorthair"
+                />
+                <h2 class="card__title">Freddie</h2>
+                <button class="card__btn" type="button">Learn more</button>
+              </article>
+            </div>
+            <div class="pets__pagination">
+              <button
+                class="pets__btn pets__btn--start slider__btn"
+                type="button"
+                aria-label="To first page"
+                disabled
+              >
+                &lt;&lt;
+              </button>
+              <button
+                class="pets__btn pets__btn--prev slider__btn"
+                type="button"
+                aria-label="Previous pets page"
+                disabled
+              >
+                &lt;
+              </button>
+              <button
+                class="pets__btn pets__btn--page slider__btn"
+                type="button"
+                aria-label="Current pets page"
+              >
+                1
+              </button>
+              <button
+                class="pets__btn pets__btn--next slider__btn"
+                type="button"
+                aria-label="Next pets page"
+              >
+                &gt;
+              </button>
+              <button
+                class="pets__btn pets__btn--end slider__btn"
+                type="button"
+                aria-label="To last pets page"
+              >
+                &gt;&gt;
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page__footer" id="contacts">
+        <div class="footer__conatiner container">
+          <div class="footer__contacts">
+            <h2 class="footer__caption">For questions and&nbsp;suggestions</h2>
+            <a class="footer__link" href="mailto:email@shelter.com">
+              <svg class="footer__icon icon-mail">
+                <use href="assets/svg/sprite.svg#mail"></use>
+              </svg>
+              <span class="footer__link-txt">email@shelter.com</span>
+            </a>
+            <a class="footer__link" href="tel:+136745677554">
+              <svg class="footer__icon icon-phone">
+                <use href="assets/svg/sprite.svg#phone"></use>
+              </svg>
+              <span class="footer__link-txt">+13 674 567 75 54</span>
+            </a>
+          </div>
+          <div class="footer__contacts">
+            <h2 class="footer__caption">We are waiting for your visit</h2>
+            <a
+              class="footer__link"
+              href="https://maps.app.goo.gl/qWAgjjFCxTzFN1om8"
+              target="_blank"
+            >
+              <div>
+                <svg class="footer__icon icon-pin">
+                  <use href="assets/svg/sprite.svg#pin"></use>
+                </svg>
+              </div>
+
+              <span class="footer__link-txt">
+                1 Central Street, Boston (entrance from the store)
+              </span>
+            </a>
+            <a
+              class="footer__link"
+              href="https://maps.app.goo.gl/Zrut5nDXV7yZ6bX29"
+              target="_blank"
+            >
+              <svg class="footer__icon icon-pin">
+                <use href="assets/svg/sprite.svg#pin"></use>
+              </svg>
+              <span class="footer__link-txt">18 South Park, London</span>
+            </a>
+          </div>
+          <div class="footer__image-wrapper">
+            <img
+              class="footer__image"
+              src="assets/img/footer-puppy.png"
+              alt="cute red puppy"
+              width="300"
+              height="310"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
