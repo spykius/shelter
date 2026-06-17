@@ -381,6 +381,7 @@ img {
   border-radius: 0.563rem;
   overflow: hidden;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .card > * {
@@ -408,6 +409,10 @@ img {
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease;
+}
+
+.card:hover {
+  background-color: var(--color-light-xl);
 }
 
 .card:hover .card__btn {
