@@ -53,6 +53,8 @@
   --space-help-item-inline-mob: clamp(1.875rem, calc(1.875rem + (3.75 - 1.875) * ((100vw - 20rem) / 28)), 3.75rem);
 
   --help-item-size: clamp(8.125rem, calc(8.125rem + (10.625 - 8.125) * ((100vw - 20rem) / 28)), 10.625rem);
+
+  --donation-img-width-mob: clamp(16.25rem, calc(16.25rem + (31.5625 - 16.25) * ((100vw - 20rem) / 28)), 31.5625rem);
 }
 
 /*=============== BASE ===============*/
@@ -663,6 +665,10 @@ img {
   .item {
     gap: 1.875rem;
   }
+
+  .item__title {
+    line-height: 1.15;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -681,42 +687,28 @@ img {
 
 /*========== donation ==========*/
 .donation {
-  width: 100%;
   background: var(--color-light-l);
 }
 
 .donation__container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding-block: 5rem 6.25rem;
-  gap: 1.875rem;
-}
-
-.donation__image-wrapper {
-  flex: 0 1 31.563rem;
-}
-
-.donation__image {
-  display: block;
-  width: 100%;
+  padding-block: 2.625rem;
+  gap: 2.625rem;
 }
 
 .donation__content {
-  flex: 0 1 23.75rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.25rem;
-}
-
-.donation__title {
-  max-width: 18.75rem;
+  padding-inline: 0.625rem;
+  max-width: 23.75rem;
 }
 
 .donation__subtitle {
-  line-height: 1.1;
-  letter-spacing: 0.06em;
+  line-height: 1.6;
 }
 
 .donation__link {
@@ -724,13 +716,8 @@ img {
   align-items: center;
   gap: 0.938rem;
   border-radius: 0.563rem;
-  padding: 0.625rem 0.938rem;
-  background: var(--color-primary);
-  transition: background-color 0.2s ease;
-}
-
-.donation__link:hover {
-  background-color: var(--color-primary-light);
+  padding: 0.5rem 0.813rem;
+  min-width: 17.563rem;
 }
 
 .donation__card-icon {
@@ -742,7 +729,7 @@ img {
 .donation__card-number {
   font-weight: var(--font-regular);
   font-size: var(--text-h3);
-  line-height: 1.15;
+  line-height: 1.1;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
 }
@@ -752,7 +739,50 @@ img {
   font-style: var(--font-italic);
   font-size: var(--text-body-s);
   line-height: 1.5;
+  text-align: justify;
   color: var(--color-dark-m);
+}
+
+.donation__image-wrapper {
+  width: 100%;
+  max-width: var(--donation-img-width-mob);
+}
+
+.donation__image {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .donation__container {
+    padding-block: 5rem 6.25rem;
+    gap: 3.75rem;
+  }
+
+  .donation__content {
+    align-items: start;
+    padding-inline: 0;
+  }
+
+  .donation__content > * {
+    text-align: start;
+  }
+
+  .donation__subtitle {
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .donation__container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.875rem;
+  }
+
+  .donation__content {
+    order: 1;
+  }
 }
 
 /*=============== FOOTER ===============*/
